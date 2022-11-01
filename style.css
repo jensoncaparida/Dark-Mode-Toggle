@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: rgb(216, 216, 216);
+  --secondary-color: rgb(41, 41, 41);
+}
+.dark-mode {
+  --primary-color: rgb(41, 41, 41);
+  --secondary-color: rgb(216, 216, 216);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.toggle {
+  width: 500px;
+  transition: all 0.7s ease-in-out;
+}
+.h1 {
+  color: var(--secondary-color);
+}
